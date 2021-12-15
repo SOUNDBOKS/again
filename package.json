@@ -1,0 +1,11 @@
+{
+  "name": "@soundboks/again",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "repository": "https://github.com/SOUNDBOKS/again",
+  "author": "oss@soundboks.com",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
