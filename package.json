@@ -1,11 +1,17 @@
 {
   "name": "@soundboks/again",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "build/index.js",
   "repository": "https://github.com/SOUNDBOKS/again",
   "author": "oss@soundboks.com",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "release:github": "yarn build && yarn publish --no-git-tag-version --registry=https://npm.pkg.github.com",
+    "release:npm": "yarn build && yarn publish --no-git-tag-version --access public",
+    "release": "yarn release:github && yarn release:npm"
   }
 }

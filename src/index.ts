@@ -26,7 +26,7 @@ export async function retryTransformer<T>(
             if (guard(value)) {
                 return value;
             } else {
-                continue
+                throw new Error("Retry guard failed")
             }
         } catch (err) {
             lastError = err as Error
